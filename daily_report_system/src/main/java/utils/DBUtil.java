@@ -7,7 +7,7 @@ import javax.persistence.Persistence;
 import constants.JpaConst;
 
 public class DBUtil {
-    private static EntityManagerFactory entityManagerFactory emf;
+    private static EntityManagerFactory emf;
     
     public static EntityManager createEntityManager() {
         return _getEntityManagerFactory().createEntityManager();
