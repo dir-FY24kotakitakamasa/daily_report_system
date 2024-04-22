@@ -17,6 +17,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+/**
+ * 従業員データのDTOモデル
+ *
+ */
 @Table(name = JpaConst.TABLE_EMP)
 @NamedQueries({
     @NamedQuery(
@@ -38,8 +42,11 @@ import lombok.Setter;
 @NoArgsConstructor //引数なしコンストラクタを自動生成する(Lombok)
 @AllArgsConstructor //全てのクラスフィールドを引数にもつ引数ありコンストラクタを自動生成する(Lombok)
 @Entity
-
 public class Employee {
+
+    /**
+     * id
+     */
     @Id
     @Column(name = JpaConst.EMP_COL_ID)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
